@@ -392,5 +392,5 @@ MIT © 2026
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for the OpenClaw ecosystem · 尘墨出品</sub>
+  <sub>Built with ❤️ for the OpenClaw ecosystem</sub>
 </p>
