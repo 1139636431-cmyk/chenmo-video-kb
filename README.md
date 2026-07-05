@@ -25,6 +25,7 @@ Chenmo is an [OpenClaw](https://openclaw.ai) skill that transforms videos from a
 - [Classification Categories](#-classification-categories)
 - [Safety Boundaries](#-safety-boundaries)
 - [Getting Started](#-getting-started)
+  - [Viewing Your Archives](#-viewing-your-archives)
 - [FAQ](#-faq)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -327,6 +328,28 @@ Simply send a video URL to your OpenClaw agent — Chenmo activates automaticall
 
 The agent detects the intent, runs the full pipeline, and reports back with the archive path and processing summary.
 
+### 📖 Viewing Your Archives
+
+All archives are generated as standard Markdown (`.md`) files inside your OpenClaw workspace under `knowledge/学习资源/<category>/`, with cover images in an adjacent `assets/` folder.
+
+**🟢 Recommended: Use with Obsidian**
+
+Open your OpenClaw workspace folder as an [Obsidian](https://obsidian.md) vault. This gives you:
+- Full-text search across all archives
+- Live preview of embedded video iframes
+- Backlinks and graph view for knowledge connections
+- Relative image paths that just work
+
+**🟡 Without Obsidian**
+
+You can open the Markdown files with any editor:
+- **VS Code** — built-in Markdown preview with `Ctrl+Shift+V` (Cmd+Shift+V)
+- **Typora** — WYSIWYG Markdown editor with seamless rendering
+- **iA Writer / Ulysses / Bear** — any Markdown-compatible editor
+- **Plain text editor** — files are human-readable even without rendering
+
+The embedded video player (iframe) requires a Markdown viewer that supports HTML — VS Code preview, Typora, and Obsidian all handle this.
+
 ---
 
 ## ❓ FAQ
@@ -368,7 +391,11 @@ By default, no — only the audio track is downloaded for transcription. The vid
 <details>
 <summary><b>Where are archives stored?</b></summary>
 
-All archives go to `knowledge/学习资源/<category>/` in your OpenClaw workspace, with cover images in an `assets/` subdirectory. The path is included in every completion report.
+All archives are saved as standard Markdown (`.md`) files under `knowledge/学习资源/<category>/` inside your OpenClaw workspace directory, with cover images in a sibling `assets/` folder.
+
+The exact absolute path (e.g., `~/openclaw-workspace/knowledge/学习资源/AI Tools & Agents/尘墨-some-tutorial.md`) is included in every completion report — you can always find it there.
+
+For the best viewing experience, see [📖 Viewing Your Archives](#-viewing-your-archives) above.
 </details>
 
 ---
